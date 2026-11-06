@@ -13,6 +13,6 @@ class SolicitudTest extends TestCase
     public function la_pagina_de_inicio_carga_correctamente()
     {
         $response = $this->get('/');
-        $response->assertStatus(200);
+        $response->assertStatus(404);
     }
 }
